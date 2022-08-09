@@ -1,0 +1,14 @@
+<h1 class="mb-3"><%= @task.title %></h1>
+
+<div class="alert alert-secondary" role="alert">
+  <%=@task.details %>
+</div>
+
+<div class="task-completion mb-3">
+  <input type="checkbox">
+  <p><%= @task.completed ? 'This task is completed.' : 'This task is not completed yet.' %></p>
+</div>
+
+<hr>
+
+<%= link_to 'Back to list', tasks_path %>

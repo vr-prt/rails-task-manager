@@ -13,3 +13,26 @@
  *= require_tree .
  *= require_self
  */
+
+ .tasks {
+  list-style: none;
+  padding: 0;
+ }
+
+ .tasks > li input {
+  margin-right: 10px;
+ }
+
+ .task-completion {
+  display: flex;
+  align-items: center;
+ }
+
+ .task-completion > p {
+  margin: 0;
+  padding-left: 10px;
+ }
+
+ .container {
+  padding: 20px;
+ }
