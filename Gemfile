@@ -28,10 +28,10 @@ gem "stimulus-rails"
 gem "jbuilder"
 
 # Bootstrap gem
-# gem "bootstrap", "~> 5.0"
+gem "bootstrap", "~> 5.0"
 
 # Bootstrap form gem
-# gem "bootstrap_form", "~> 5.1"
+gem "bootstrap_form", "~> 5.1"
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
