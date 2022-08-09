@@ -1,4 +1,7 @@
-<h1 class="mb-3"><%= @task.title %></h1>
+<div class="task-header">
+  <h1 class="mb-3"><%= @task.title %></h1>
+  <button type="button" class="btn btn-secondary"><%= link_to 'Edit task', edit_task_path(@task) %></button>
+</div>
 
 <div class="alert alert-secondary" role="alert">
   <%=@task.details %>

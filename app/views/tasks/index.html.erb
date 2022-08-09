@@ -2,8 +2,16 @@
 
 <ul class="tasks">
   <% @tasks.each do |task| %>
-    <li><input type="checkbox"><%= link_to task.title, task_path(task) %></li>
+    <li>
+      <input type="checkbox">
+      <%= link_to task.title, task_path(task) %>
+      <%= link_to task_path(task), data: {turbo_method: :delete, turbo_confirm: 'You sure?'} do %>
+        <i class="bi bi-trash"></i>
+      <% end %>
+    </li>
   <% end %>
 </ul>
 
 <hr>
+
+<%= link_to 'Create task', new_task_path %>

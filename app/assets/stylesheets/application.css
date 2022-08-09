@@ -14,6 +14,18 @@
  *= require_self
  */
 
+ .task-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+ }
+
+ .task-header button a {
+  text-decoration: none;
+  color: white;
+ }
+
  .tasks {
   list-style: none;
   padding: 0;
